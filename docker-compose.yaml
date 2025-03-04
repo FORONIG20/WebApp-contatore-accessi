@@ -5,4 +5,4 @@ services:
     ports: 
       - 8080:8080
     volumes:
-      - ./src/main/webapp:/usr/local/tomcat/webapps/test
+      - ./target/test:/usr/local/tomcat/webapps/test
