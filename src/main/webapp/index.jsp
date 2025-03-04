@@ -1,12 +1,23 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<!DOCTYPE html>
+
 <html>
     <head>
         <title>JSP - Hello World</title>
     </head>
     <body>
-        <h1><%= "Hello World!" %></h1>
-        <br />
-        <a href="hello-servlet">Hello Servlet</a>
+        <form action="mostra.jsp">
+            <label>User
+                <input type="text" name="usr">
+            </label>
+            <br>
+            <label>Password
+                <input type="password" name="pwd">
+            </label>
+            <br>
+            <label>Submit
+                <input type="submit" value="submit">
+            </label>
+        </form>
+
     </body>
 </html>
