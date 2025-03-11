@@ -10,7 +10,8 @@
     
     <%
     if(request.getParameter("logout") != null ){  
-        session.invalidate();
+        //session.invalidate();
+        session.removeAttribute("usr");
     }
     response.sendRedirect("login.jsp");
     %>
