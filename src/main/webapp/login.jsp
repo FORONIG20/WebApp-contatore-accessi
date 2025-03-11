@@ -21,8 +21,9 @@
         </form>
         
         Sessione attiva: <%= session.getAttribute("usr") %>
+        Numero di login: <%= session.getAttribute("cont") %>
 
-        <%%>
+        <% session.setAttribute("cont", 0); %>
 
 
     </body>

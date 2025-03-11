@@ -11,9 +11,10 @@
             if(Objects.equals(request.getParameter("usr"), "admin") && Objects.equals(request.getParameter("pwd"), "admin")){
         %>
         <p>Login success!</p>
-
-
-        <p>Login effettuato <%= conta %> volte</p>
+        
+        <%
+            session.setAttribute("cont", session.getAttribute("cont") + 1);
+        %>
 
         <!-- mostra l'utente corrente -->
         <% session.setAttribute("usr", request.getParameter("usr")); %>
