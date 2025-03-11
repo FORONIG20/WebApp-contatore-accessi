@@ -1,6 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ page import="java.util.Objects"%>
-<%@ page import="../java/Contatore" %>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,11 +12,8 @@
         %>
         <p>Login success!</p>
 
-        <%
-            Contatore.incrementa();
-        %>
 
-        <p>Login effettuato <%= Contatore.getContatore() %> volte</p>
+        <p>Login effettuato <%= conta %> volte</p>
 
         <!-- mostra l'utente corrente -->
         <% session.setAttribute("usr", request.getParameter("usr")); %>

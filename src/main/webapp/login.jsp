@@ -22,6 +22,8 @@
         
         Sessione attiva: <%= session.getAttribute("usr") %>
 
+        <%%>
+
 
     </body>
 </html>
