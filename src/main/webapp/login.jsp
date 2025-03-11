@@ -2,9 +2,10 @@
 
 <html>
     <head>
-        <title>JSP - Hello World</title>
+        <title>Login</title>
     </head>
     <body>
+        <h1>Login</h1>
         <form action="mostra.jsp">
             <label>User
                 <input type="text" name="usr">
@@ -18,6 +19,9 @@
                 <input type="submit" value="submit">
             </label>
         </form>
+        
+        Sessione attiva: <%= session.getAttribute("usr") %>
+
 
     </body>
 </html>
